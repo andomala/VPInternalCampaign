@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Andre for VP Internal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.steamusercontent.com/ugc/1644340153927666059/50431B5FBAED8F90AB4D78ECBF614D5B9109D956/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #FF6F61, #FFA500);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4.5em;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+            color: #ffffff;
+            animation: fadeInDown 1.5s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.6em;
+            font-weight: 300;
+            color: #ffffff;
+            animation: fadeInUp 1.5s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(40, 40, 40, 0.8); /* Translucent background */
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            border: 2px solid transparent;
+            animation: borderGlow 3s infinite ease-in-out;
+        }
+
+        @keyframes borderGlow {
+            0% { border-color: rgba(255, 111, 97, 0.3); }
+            50% { border-color: rgba(255, 111, 97, 0.8); }
+            100% { border-color: rgba(255, 111, 97, 0.3); }
+        }
+
+        h2 {
+            color: #FF6F61;
+            font-weight: 600;
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FF6F61;
+            display: inline-block;
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+            animation: slideInLeft 1s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stroke effect */
+        }
+
+        h2 i {
+            margin-right: 10px;
+            font-size: 1.2em;
+            color: #FF6F61;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stroke effect */
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background: #FF6F61;
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #ffffff;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stroke effect */
+        }
+
+        section {
+            margin-bottom: 60px;
+            position: relative;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 111, 97, 0.3);
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 111, 97, 0.4);
+        }
+
+        .gif-container {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .shape-divider {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .shape-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 50px;
+        }
+
+        .shape-divider .shape-fill {
+            fill: #FF6F61;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="glow">Andre for VP Internal!</h1>
+        <p>I really really really love geomatics ☺</p>
+        <div class="shape-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+    <div class="container">
+        <div class="gif-container">
+            <img src="https://media4.giphy.com/media/Elr7sRhF0iByw/giphy.gif?cid=6c09b952hzbsyp9g3hawwg1a8vquypd66u53v70g8xg6mctt&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Epic Guy Fieri GIF" width="200">
+        </div>
+        <section>
+            <div class="card">
+                <h2><i class="fas fa-users"></i> Promoting Geomatics and Engaging First-Year Students</h2>
+                <p>
+                    As VP Internal, I will pour my heart and soul into promoting Geomatics Engineering and ensuring every student feels the same excitement and pride I have for this field. From my very first year, I’ve been on a mission to share Geomatics with my peers—many of whom had no idea what it was (the amount of people who thought it was about rocks was wild).
+                </p>
+                <p>
+                    Through countless conversations, events, and even casual chats, I’ve not only helped "demystify" geo, but also inspired several students to join the program! As a second-year, I’ve thrown myself into every first-year outreach event run by GESS, and even taking the time from outside GESS events through social media platforms and through volunteering to making sure new engineering students feel informed, and excited about a future in Geomatics!
+                </p>
+                <p>
+                    My extroverted nature and love for connecting with people have allowed me to spread the word about Geomatics in a way that’s genuine and impactful. As VP Internal, I’ll take this passion to the next level, ensuring every first-year student feels the same spark of curiosity and enthusiasm that I did when I first discovered Geomatics in high school.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+                <h2><i class="fas fa-handshake"></i> Commitment to Showing Up and Advocacy</h2>
+                <p>
+                    I’m all in when it comes to representing Geomatics and advocating for our students. I’ll be there at every meeting—whether it’s Student’s Union gatherings, SSAF committee sessions, or internal GESS discussions—ready to fight for our department’s needs and secure the resources we deserve.
+                </p>
+                <p>
+                    My passion for Geomatics and my outgoing personality mean I won’t just show up; I’ll actively engage, collaborate, and push for results. I thrive in these settings, and I’ll use every opportunity to make sure Geomatics isn’t just seen—it’s celebrated and well funded.
+                </p>
+                <p>
+                    With me as VP Internal, you can count on a strong, unwavering voice for our community.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+                <h2><i class="fas fa-network-wired"></i> Strengthening Connections to Industry</h2>
+                <p>
+                    Geomatics has historically had a really high employment rate, however some of the second years have voiced concerns about jobs and simply not knowing what path they want to take. As VP Internal, I’ll work hand-in-hand with VP External to bring more networking nights on different days that accomodate well with students schedules. Ensuring these events are held on various days accomodates weekly commitments so that more people can attend the event.
+                </p>
+                <p>
+                    I’ll also work VP External to organize GESS-led mock interviews and resume roasts to help you shine when it matters most. But it doesn’t stop there. I know how crucial co-ops and internships are, and I’ll work with faculty to ensure earlier job postings and deadline notifications, so you never miss out on an opportunity to apply!
+                </p>
+                <p>
+                    Plus, I’ll work VP Academic to restructure the peer mentorship program to connect you with upper-years who’ve already navigated the co-op process successfully and have landed a job. I’ll make sure you’re not just ready for the industry — you’re ahead of the engineering curve and fully informed!
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+                <h2><i class="fas fa-book-open"></i> Academic Support and Resource Development</h2>
+                <p>
+                    I’m on a mission to make sure no current or potential Geomatics student ever feels lost or unsupported. Prior to major selection, I saw firsthand how many of my peers had no idea what Geomatics was—and how much that lack of understanding held them back. Even to the people who chose Geomatics, they ended up having a misinformed idea of what the program would be like.
+                </p>
+                <p>
+                    That’s why, as VP Internal, I’ll work with VP Academic to create introductory sessions for first-year students, where they can experience what Geomatics classes are like and get a taste of the incredible opportunities this field offers. These sessions will be a massive boon for students who are still figuring out their path.
+                </p>
+                <p>
+                    I also know how tough courses like MATH 375 and ENDG 319 can be, especially this year was brutal and it doesn't seem to be easing up next year! That’s why I’ll establish a peer tutoring network to give students the support they need to succeed. No one should feel like they’re struggling alone, and with this network, you’ll always have someone to turn to.
+                </p>
+                <p>
+                    And let’s talk about a common issue which is a lack of information and sometimes even misinformation. Too many students in my year were given wrong advice about course requirements, minors, and more. That ends now. I’ll create a comprehensive FAQ for course information, clearing up confusion and giving you the accurate, reliable answers you need. I'll work with the VP Communications and the Artistic Commissioners to best broadcast this info. Whether it’s about minors, course selection, questions relating to CBEPS, or anything in between, I’ll make sure you have the resources to make informed decisions about your academic journey!
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
